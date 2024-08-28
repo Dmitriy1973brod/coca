@@ -1,0 +1,137 @@
+.strength {
+  &__container {
+    border-bottom: 1px solid var(--neutral-color-30);
+    padding: 66px 0 160px;
+
+    @include mobile {
+      padding: 26px 0 70px;
+    }
+  }
+
+  &__list {
+    @include flex-align-center;
+
+    @include tablet {
+      gap: 82px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @include small-tablet {
+      gap: 62px;
+    }
+
+    @include mobile {
+      gap: 42px;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      min-width: 325px;
+      justify-content: center;
+    }
+
+    @include mobile {
+      min-width: 240px;
+    }
+
+    &:not(:last-child) {
+      @include flex-align-center;
+      gap: 72px;
+      margin-right: 72px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 99px;
+        background-color: var(--neutral-color-40);
+
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+
+    &-text {
+      color: var(--neutral-color-150);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    &-num {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--neutral-color-100);
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 120%;
+
+      @include tablet {
+        font-size: 58px;
+      }
+
+      @include mobile {
+        font-size: 48px;
+      }
+
+      @include small-mobile {
+        font-size: 42px;
+      }
+    }
+  }
+
+  &__list,
+  &__img {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    @include tablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info {
+    @include flex-justify-between;
+
+    @include tablet {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 772px;
+    color: var(--neutral-color-100);
+    font-weight: 600;
+    line-height: 120%;
+  }
+  &__descr {
+    max-width: 404px;
+    color: var(--neutral-color-150);
+    font-weight: 500;
+    line-height: 178%;
+
+    @include tablet {
+      max-width: 700px;
+    }
+  }
+}

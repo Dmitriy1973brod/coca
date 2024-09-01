@@ -1,0 +1,171 @@
+.testimonials {
+  padding: 69px 0 160px;
+
+  @include mobile {
+    padding: 39px 0 70px;
+  }
+
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 48px;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      gap: 24px;
+    }
+
+    @include mobile {
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 530px;
+    color: var(--neutral-color-100);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;
+
+    @include tablet {
+      max-width: 650px;
+    }
+  }
+
+  &__descr {
+    max-width: 376px;
+    color: var(--neutral-color-150);
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+    @include tablet {
+      max-width: 450px;
+    }
+  }
+
+  &__rating {
+    position: relative;
+    max-width: 164px;
+    @include flex-align-center;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    &-num {
+      position: absolute;
+      top: -1px;
+      right: 0px;
+      color: var(--neutral-color-100);
+      width: 24px;
+      height: 26px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__slider-wrapper {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 115px;
+      height: 77px;
+      background: url(../icons/quotes-icon.svg);
+      transform: translateY(15px);
+
+      @include mini-desktop {
+        transform: translateY(-5px);
+      }
+
+      @include mobile {
+        background-size: cover;
+        width: 85px;
+        height: 57px;
+      }
+    }
+  }
+
+  &__slider {
+    max-width: 898px;
+  }
+
+  &__comment {
+    &-text {
+      margin-bottom: 40px;
+      color: var(--neutral-color-100);
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: -1px;
+    }
+
+    &-author {
+      font-style: normal;
+      @include flex-align-center;
+      gap: 24px;
+
+      &-avatar {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      &-name {
+        color: var(--neutral-color-100);
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+
+      &-professions {
+        color: var(--neutral-color-150);
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    justify-content: end;
+    gap: 16px;
+    transform: translateY(-53px);
+
+    @include mini-desktop {
+      transform: translateY(5px);
+    }
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid #ced1d8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      background-color: var(--neutral-color-100);
+      border-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

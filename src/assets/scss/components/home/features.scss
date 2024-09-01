@@ -16,12 +16,7 @@
 
     @include mobile {
       gap: 25px;
-    }
-
-    @include tablet {
-      // align-items: center;
-      // text-align: center;
-    }
+    }    
   }
 
   &__left {
@@ -112,7 +107,7 @@
         font-weight: 700;
         font-size: 9px;
         line-height: 120%;
-        color: #7e8492;
+        color: var(--neutral-color-150);
       }
     }
   }

@@ -1,4 +1,9 @@
 .header {  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--neutral-color-10);
+  z-index: 10;
   padding: 35px 0 36px;
 
   @include mobile {
@@ -53,7 +58,7 @@
       transition:
         left var(--transition),
         opacity var(--transition);
-        visibility: var(--transition);
+      visibility: var(--transition);
 
       &--visible {
         left: 0;
@@ -99,7 +104,7 @@
 
       @include small-tablet {
         top: -28px;
-        font-size: 20px;        
+        font-size: 20px;
       }
     }
 

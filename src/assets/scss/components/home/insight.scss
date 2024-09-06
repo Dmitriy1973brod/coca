@@ -1,12 +1,13 @@
 .insight {
   &__container {
-    border-top: 1px solid var(--neutral-color-30);    
+    position: relative;
+    border-top: 1px solid var(--neutral-color-30);
     padding-top: 151px;
     padding-bottom: 91px;
 
     @include mobile {
-        padding-top: 86px;
-        padding-bottom: 61px;
+      padding-top: 86px;
+      padding-bottom: 61px;
     }
 
     @include small-mobile {
@@ -22,7 +23,7 @@
     letter-spacing: -2px;
 
     @include mobile {
-        margin-bottom: 12px;
+      margin-bottom: 12px;
     }
   }
 
@@ -34,7 +35,7 @@
     letter-spacing: 0px;
 
     @include mobile {
-        margin-bottom: 40px;
+      margin-bottom: 40px;
     }
   }
 
@@ -45,43 +46,44 @@
 
   &__slider {
     position: relative;
+    // padding-bottom: 40px;
 
-    &-btns {
-      @include flex-all-center;
-      position: absolute;      
-      left: 50%;
-      z-index: var(--z-index-3);
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      background-color: #fff;
-      transform: translate(-50%, 126px);
+    // &-btns {
+    //   @include flex-all-center;
+    //   position: absolute;
+    //   left: 50%;
+    //   z-index: var(--z-index-3);
+    //   border-radius: 50%;
+    //   width: 80px;
+    //   height: 80px;
+    //   background-color: #fff;
+    //   transform: translate(-50%, 126px);
 
-      @include tablet {
-        display: none;
-      }
+    //   @include tablet {
+    //     display: none;
+    //   }
 
-      @include small-mobile {        
-        left: 87%;        
-        display: flex;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, 230%);
-      }
-    }
+    //   @include small-mobile {
+    //     left: 87%;
+    //     display: flex;
+    //     width: 50px;
+    //     height: 50px;
+    //     transform: translate(-50%, 230%);
+    //   }
+    // }
   }
 
   &__article {
     max-width: 582px;
 
     @include mini-desktop {
-        max-width: 482px;        
+      max-width: 482px;
     }
 
     @include mobile {
-        max-width: 400px;
+      max-width: 400px;
     }
-    
+
     &-img {
       margin-bottom: 16px;
     }
@@ -110,5 +112,84 @@
       line-height: 150%;
       letter-spacing: -2%;
     }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    justify-content: end;
+    gap: 16px;
+    transform: translateY(-20px);    
+
+    @include mini-desktop {
+      transform: translateY(5px);
+    }
+  }
+
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid #ced1d8;
+    border-radius: 50%;    
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);      
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      background-color: var(--neutral-color-100);
+      border-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+
+.swiper-pagination {
+  display: flex;
+  position: absolute;
+  color: var(--neutral-color-70);
+  font-size: 25px;
+  font-weight: 500;
+  width: 70px;
+  height: 40px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--neutral-color-70);
+  border-radius: 100px;
+
+  @include small-tablet {
+    font-size: 20px;
+    width: 60px;
+    height: 35px;
+    // left: 90%;
+  }
+
+  @include small-mobile {
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    // left: 90%;
   }
 }

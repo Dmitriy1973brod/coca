@@ -1,20 +1,20 @@
 .partners {
-    padding: 108px 76px;
+  padding: 108px 76px;
 
-    @include mobile {
-        padding: 66px 0;
+  @include mobile {
+    padding: 66px 0;
+  }
+
+  &__container {
+    @include flex-all-between;
+    gap: 30px;
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
     }
-
-    &__container {
-        @include flex-all-between;
-        gap: 30px;
-
-        @include small-tablet {
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-    }
+  }
 
   &__title {
     color: var(--neutral-color-150);
@@ -41,7 +41,10 @@
     gap: 10px 30px;
 
     @include mobile {
-        gap: 10px;
+      display: none;
+      visibility: hidden;
+      // position: absolute;
+      // gap: 10px;
     }
   }
 
@@ -51,5 +54,19 @@
     height: 90px;
     background-color: #fff;
     border-radius: 16px;
+  }
+
+  &__slider-wrapper {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+    @include mobile {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      margin: 10px 26px;
+      padding: 25px 26px;      
+    }
   }
 }

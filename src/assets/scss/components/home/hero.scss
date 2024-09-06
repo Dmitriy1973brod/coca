@@ -1,6 +1,7 @@
 .hero {
+  margin-top: 36px;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   padding: 87px 0 141px;
 
   @include mini-desktop {

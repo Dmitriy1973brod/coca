@@ -10,10 +10,12 @@ export const insightSlider = () => {
     loop: true,
     centeredSlides: true,
     speed: 500,
+    
     // effect: 'fade',
     // fadeEffect: {
-    //   crossFade: true,
+    //   crossFade: true,      
     // },
+
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
@@ -37,11 +39,11 @@ export const useTestimonialsSlider = () => {
     slidesPerView: 'auto',
     spaceBetween: 22,
     loop: true,
-    speed: 500,
-    // effect: 'fade',
-    // fadeEffect: {
-    //   crossFade: true,
-    // },
+    speed: 700,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
     navigation: {
       nextEl: '.testimonials__btn--next',
       prevEl: '.testimonials__btn--prev',

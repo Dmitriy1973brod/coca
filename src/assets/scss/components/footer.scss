@@ -38,13 +38,11 @@
     @include tablet {
       font-size: 54px;
     }
-  
+
     @include mobile {
       font-size: 42px;
     }
   }
-
-  
 
   &__descr {
     max-width: 543px;
@@ -112,9 +110,24 @@
     @include tablet {
       width: 100%;
     }
+
+    @include mobile {
+      display: none;
+    }
+
+    &-mobil {
+      display: none;
+
+      @include mobile {
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 
-  &__list {    
+  &__list {
     display: flex;
     gap: 93px;
 
@@ -136,17 +149,43 @@
     @include small-mobile {
       text-align: center;
     }
+
+    &-mobil {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
   }
 
   &__item {
+    &-mobil {
+      margin-left: 40%;
+      max-width: 250px;
+      margin-bottom: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+
     &-title {
-      margin-bottom: 24px;
+      margin-bottom: 10px;
       font-weight: 700;
       line-height: 24px;
+      color: #fff;
     }
 
     @include mobile {
       min-width: 143px;
+    }
+  }
+
+  &__sublist {
+    @include mobile {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: var(--transition);
     }
   }
 

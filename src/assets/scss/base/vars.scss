@@ -7,13 +7,16 @@
   --neutral-color-50: #afb3bb;
   --neutral-color-60: #18181d;
   --neutral-color-70: #606060;
+  --neutral-color-90: #161A34;
   --neutral-color-100: #1d1e25;
   --neutral-color-120: #828282;
   --neutral-color-130: #D9D9D9;
   --neutral-color-140: #000;  
   --neutral-color-150: #7e8492;  
 
+  --primery-color-30: #1463FF;
   --primery-color-50: #4E7DDB;
+  --primery-color-60: #4b628f;  
 
   --logo-color-text: #101010;
   --logo-color-circle: #101010;
@@ -49,6 +52,7 @@
 
 [data-theme='dark'] {
   --neutral-color-10: #1d1e25;
+  --neutral-color-90: #18181d;
   --neutral-color-100: #fff;
   --neutral-color-140: #fff;  
 

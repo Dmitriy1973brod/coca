@@ -12,7 +12,7 @@
   }  
 
   &__container {
-    @include flex-justify-between;
+    @include flex-all-between;
     align-items: flex-end;
 
     @include mini-desktop {
@@ -60,8 +60,7 @@
   }
 
   &__form {
-    @include flex-align-center;
-    // align-items: end;
+    @include flex-align-center;    
     gap: 16px;
 
     @include mini-desktop {

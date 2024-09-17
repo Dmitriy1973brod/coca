@@ -23,6 +23,7 @@
   }
 
   &__map {
+    margin-bottom: 50px;
     @include flex-all-between;
     gap: 86px;
 

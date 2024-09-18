@@ -5,7 +5,7 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
   root: './src',
-  base: '/coca/',
+  base: '/coca-2/',
   server: {
     port: 3000,
     open: true,

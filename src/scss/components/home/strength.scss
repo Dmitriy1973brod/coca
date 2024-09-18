@@ -12,6 +12,7 @@
     @include flex-align-center;
 
     @include tablet {
+      margin-bottom: 50px;
       gap: 82px;
       flex-wrap: wrap;
       justify-content: center;
@@ -91,13 +92,7 @@
   &__list,
   &__img {
     margin-bottom: 80px;
-  }
-
-  &__list {
-    @include tablet {
-      margin-bottom: 50px;
-    }
-  }
+  }  
 
   &__img {
     @include tablet {

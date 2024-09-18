@@ -1,4 +1,4 @@
-import '../assets/scss/main.scss';
+import '/scss/main.scss';
 import 'swiper/css/effect-fade';
 
 import { useTheme } from './components/theme.js';

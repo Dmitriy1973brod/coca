@@ -45,32 +45,7 @@
   }
 
   &__slider {
-    position: relative;
-    // padding-bottom: 40px;
-
-    // &-btns {
-    //   @include flex-all-center;
-    //   position: absolute;
-    //   left: 50%;
-    //   z-index: var(--z-index-3);
-    //   border-radius: 50%;
-    //   width: 80px;
-    //   height: 80px;
-    //   background-color: #fff;
-    //   transform: translate(-50%, 126px);
-
-    //   @include tablet {
-    //     display: none;
-    //   }
-
-    //   @include small-mobile {
-    //     left: 87%;
-    //     display: flex;
-    //     width: 50px;
-    //     height: 50px;
-    //     transform: translate(-50%, 230%);
-    //   }
-    // }
+    position: relative;    
   }
 
   &__article {
@@ -182,15 +157,13 @@
   @include small-tablet {
     font-size: 20px;
     width: 60px;
-    height: 35px;
-    // left: 90%;
+    height: 35px;    
   }
 
   @include small-mobile {
     font-size: 16px;
     width: 50px;
-    height: 30px;
-    // left: 90%;
+    height: 30px;    
   }
 }
 

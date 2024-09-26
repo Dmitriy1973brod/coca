@@ -10,12 +10,6 @@ export const insightSlider = () => {
     loop: true,
     centeredSlides: true,
     speed: 500,
-    
-    // effect: 'fade',
-    // fadeEffect: {
-    //   crossFade: true,      
-    // },
-
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',

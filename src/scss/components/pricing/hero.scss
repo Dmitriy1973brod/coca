@@ -6,19 +6,17 @@
     padding: 60px 0 108px;
   }
 
-  
-
   &__top {
     padding-bottom: 122px;
     text-align: center;
 
     @include tablet {
-        padding-bottom: 86px;
+      padding-bottom: 86px;
     }
 
     @include mobile {
-        padding-bottom: 56px;
-      }
+      padding-bottom: 56px;
+    }
 
     &::before {
       top: 0px;
@@ -36,19 +34,19 @@
     background-color: #1463ff1a;
 
     @include small-mobile {
-        margin-bottom: 18px;
+      margin-bottom: 18px;
     }
   }
 
   &__descr {
     margin: 0 auto 56px;
     max-width: 903px;
-    color: var(--neutral-color-100);    
+    color: var(--neutral-color-100);
     font-weight: 700;
     line-height: 120%;
 
     @include mobile {
-        margin-bottom: 36px;
+      margin-bottom: 36px;
     }
   }
 
@@ -105,8 +103,8 @@
     @include flex-all-between;
 
     @include tablet {
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
 
     &-icon {
@@ -171,8 +169,6 @@
     }
 
     &-item {
-        
-
       color: var(--neutral-color-100);
       font-weight: 500;
       line-height: 26px;
@@ -240,11 +236,11 @@
     padding: 40px 24px;
 
     @include mini-desktop {
-        max-width: 320px;
+      max-width: 320px;
     }
 
     @include tablet {
-        max-width: 450px;
+      max-width: 450px;
     }
 
     &--popular {
@@ -255,7 +251,7 @@
       @include tablet {
         flex-direction: column;
         transform: inherit;
-    }
+      }
     }
   }
 }

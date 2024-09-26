@@ -90,16 +90,15 @@
   }
 
   &__btns {
-    @include flex-align-center;
+    @include flex-align-center;  
     justify-content: end;
-    gap: 16px;
+    gap: 16px;    
     transform: translateY(-20px);    
 
     @include mini-desktop {
       transform: translateY(5px);
     }
   }
-
 
   &__btn {
     @include flex-all-center;
@@ -109,7 +108,8 @@
     height: 50px;
     transition:
       background-color var(--transition),
-      border-color var(--transition);      
+      border-color var(--transition);
+            
 
     @include small-mobile {
       width: 40px;

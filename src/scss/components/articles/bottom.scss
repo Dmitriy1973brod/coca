@@ -1,0 +1,147 @@
+.bottom {
+  padding: 160px 0;
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  &__wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1360px;
+    margin-right: -130px;
+
+    @include small-desktop {
+      margin-right: -15px;
+    }
+
+    @include tablet {
+      margin-bottom: auto;
+    }
+
+    @include mobile {
+      padding-right: 15px;
+    }
+  }
+
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 80px;
+    gap: 15px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+      align-items: end;
+    }
+
+    @include small-mobile {
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      margin-bottom: 24px;
+
+      @include small-mobile {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-text {
+      max-width: 435px;
+      color: var(--neutral-color-150);
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    gap: 16px;
+
+    @include mini-desktop {
+      //   transform: translateY(5px);
+    }
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid #ced1d8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      background-color: var(--neutral-color-100);
+      border-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__article {
+    &-1,
+    &-2 {
+      max-width: 406px;
+    }
+
+    &-3 {
+      max-width: 476px;
+    }
+
+    &-img {
+      margin-bottom: 24px;
+    }
+
+    &-descr {
+      &-title {
+        margin-bottom: 16px;
+        color: var(--neutral-color-100);
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: -1px;
+      }
+
+      &-text {
+        margin-bottom: 24px;
+        color: var(--neutral-color-150);
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0px;
+      }
+    }
+
+    &-btn {
+      display: inline-block;
+      padding: 16px 46px;
+      color: var(--neutral-color-100);
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0px;
+      border: 1px solid var(--neutral-color-40);
+    }
+  }
+}

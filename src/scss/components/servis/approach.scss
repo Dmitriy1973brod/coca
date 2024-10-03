@@ -1,0 +1,122 @@
+.approach {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 60px;
+    padding: 40px 0 36px;
+  }
+
+  @include mobile {
+    padding: 26px 0 26px;
+  }
+
+  @include small-mobile {
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  &__container {
+    max-width: 970px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: var(--neutral-color-140);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+
+  &__text {
+    margin-bottom: 56px;
+    color: var(--neutral-color-100);
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: start;
+    gap: 48px;
+
+    @include tablet {
+      gap: 28px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &-info {
+      &-head {
+        margin-bottom: 16px;
+        color: var(--neutral-color-150);
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+      }
+
+      &-author {
+        margin-bottom: 16px;
+        color: var(--neutral-color-100);
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: -1px;
+      }
+
+      &-professions {
+        margin-bottom: 16px;
+        color: var(--neutral-color-150);
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+
+      &-descr {
+        max-width: 650px;
+        color: rgb(29, 30, 37);
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+      }
+    }
+
+    &-social {
+      margin-bottom: 14px;
+      display: flex;
+      gap: 24px;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+      }
+
+      &-list {
+        max-width: 224px;
+        @include flex-all-between;
+        gap: 32px;
+        align-items: start;
+      }
+
+      &-link {
+        & svg {
+          & path {
+            fill: var(--logo-color-text);
+          }
+        }
+      }
+    }
+
+    &-text {
+      color: var(--neutral-color-100);
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0px;
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

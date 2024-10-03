@@ -1,4 +1,96 @@
 .tasks {
   margin-top: 141px;
   padding: 80px 0 56px;
+
+  @include tablet {
+    padding: 40px 0 36px;
+  }
+
+  @include mobile {
+    padding: 26px 0 26px;
+  }
+
+  @include small-mobile {
+    padding-top: 10px;
+  }
+
+  &__container {
+    max-width: 970px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    max-width: 970px;
+    color: var(--neutral-color-100);
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -3px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__head {
+    @include flex-all-between;
+    gap: 15px;
+    margin-bottom: 24px;
+    align-items: end;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+
+    &-left {
+      @include flex-all-between;
+      gap: 24px;
+      max-width: 298px;
+    }
+
+    &-author {
+      &-avatar {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      &-name {
+        margin-bottom: 4px;
+        color: var(--neutral-color-100);
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+
+      &-professions {
+        color: var(--neutral-color-150);
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+    }
+
+    &-rigth-date {
+      color: var(--neutral-color-150);
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+  }
+
+  &__img {
+    margin-bottom: 80px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    max-width: 940px;
+    color: var(--neutral-color-100);
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
 }

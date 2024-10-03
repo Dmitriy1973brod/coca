@@ -57,10 +57,21 @@
       letter-spacing: 0%;
     }
 
-    &-social-list {
-      @include flex-all-between;
-      gap: 8px;
+    &-social {
+      &-list {
+        @include flex-all-between;
+        gap: 8px;
+      }
+
+      &-link {
+        & svg {
+          & path {
+            fill:var(--logo-color-text);
+          }
+        }
+      }
     }
+    
   }
 
   &__btns {

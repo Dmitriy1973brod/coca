@@ -7,12 +7,12 @@
 
   @include small-mobile {
     margin-bottom: 40px;
-  }
+  }  
 
   &__container {
     position: relative;
-    display: flex;
-    margin-right: 0;
+    display: flex;    
+    margin-right: 0;    
     max-width: 1574px;
     margin-left: auto;
     margin-bottom: 80px;
